@@ -32,7 +32,12 @@
 			$mobileError = 'Please enter Mobile Number';
 			$valid = false;
 		}
+
 		
+		if (empty($linkedln)) {
+			$mobileError = 'Please enter Linkedln id';
+			$valid = false;
+		}
 		// insert data
 		if ($valid) {
 			$pdo = Database::connect();
